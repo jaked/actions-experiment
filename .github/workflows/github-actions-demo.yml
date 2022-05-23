@@ -18,7 +18,7 @@ jobs:
   logContributors:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/actions/show-contributors@main
+      - uses: ./.github/actions/show-contributors
         id: get_latest_release
         with:
           route: GET /repos/{owner}/{repo}/contributors
