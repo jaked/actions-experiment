@@ -15,10 +15,10 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-  logLatestRelease:
+  logContributors:
     runs-on: ubuntu-latest
     steps:
-      - uses: octokit/request-action@v2.x
+      - uses: ./.github/actions/show-contributors@main
         id: get_latest_release
         with:
           route: GET /repos/{owner}/{repo}/contributors

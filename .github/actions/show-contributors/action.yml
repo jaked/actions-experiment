@@ -1,0 +1,5 @@
+name: "show contributors"
+description: "show contributors"
+runs:
+  using: "node16"
+  main: index.js
